@@ -1,4 +1,6 @@
 import "./field-and-form.css";
+import "./pathway.css";
+import { Pathway } from "./pathway";
 
 export const metadata = { title: "Field & Form | A little more clarity", description: "A practical food and wellbeing guide built around the everyday choices that suit you." };
 
@@ -19,7 +21,7 @@ export default function Page() {
         </div>
       </section>
       <section className="field-benefits"><div><span>01 / NOTICE</span><h2>Start with your day.</h2><p>What needs a little more ease: mornings, meals, or the middle of the afternoon?</p></div><div><span>02 / EXPLORE</span><h2>Keep it useful.</h2><p>Build a shortlist from the products and habits that feel relevant to you.</p></div><div><span>03 / REVISIT</span><h2>Let your needs lead.</h2><p>Good routines can change. Give yourself room to adjust as you go.</p></div></section>
-      <section className="field-download" id="guide"><div className="download-copy"><p className="field-kicker">THE FIELD NOTE / FREE DOWNLOAD</p><h2>Keep a little<br /><i>goodness handy.</i></h2><p>Get the Everyday Wellbeing Checklist - a short guide for shaping a routine around what matters to you.</p><div className="download-meta"><span>4 PROMPTS</span><span>3 MINUTES</span><span>YOURS TO KEEP</span></div></div><form className="download-form"><span className="form-edition">FIELD & FORM / VOL. 01</span><label htmlFor="field-email">Send me the checklist</label><p>Where can we send your copy?</p><input id="field-email" name="email" type="email" placeholder="Email address" required/><button type="submit">Send my guide <span>↗</span></button><small>Only practical notes from Field & Form.</small></form></section>
+      <section className="field-download" id="guide"><div className="download-copy"><p className="field-kicker">THE FIELD NOTE / PERSONAL GUIDE</p><h2>Keep a little<br /><i>goodness handy.</i></h2><p>Choose a moment in your day and get a useful starting point to keep close.</p><div className="download-meta"><span>3 PROMPTS</span><span>PERSONAL ROUTE</span><span>YOURS TO KEEP</span></div></div><Pathway /></section>
       <footer className="field-footer"><a className="field-brand" href="#top"><span className="field-mark">F<span>&</span></span><span>FIELD <i>& FORM</i></span></a><span>Better days, built one choice at a time.</span><span>© 2026 FIELD & FORM</span></footer>
     </div>
   </main>;
