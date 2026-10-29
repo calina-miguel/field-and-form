@@ -31,7 +31,7 @@ export default function Page() {
         </header>
 
         <figure className="field-cover" aria-label="A quiet river in Yosemite Valley">
-          <img className="field-cover-image" src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/field-valley.webp`} alt="A river winding through a forest beneath Yosemite's granite peaks" fetchPriority="high" decoding="async" />
+          <img className="field-cover-image" src="/field-valley.webp" alt="A river winding through a forest beneath Yosemite's granite peaks" fetchPriority="high" decoding="async" />
           <div className="field-cover-shade" aria-hidden="true" />
           <div className="field-cover-center">
             <div className="field-cover-card">
